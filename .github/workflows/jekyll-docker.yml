@@ -17,3 +17,6 @@ jobs:
       run: |
 
         echo "Mon fichier bien fait" > readme.txt
+        git add .
+        git commit -m "readme"
+        git push -u origin progistack
