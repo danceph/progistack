@@ -14,5 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Créer un dossier pour la nouvelle version
-      run: mkdir new_version
-     
+      run: |
+        mkdir ./new_version
+        echo "Contenu du fichier example.txt" > ./new_version/example.txt
