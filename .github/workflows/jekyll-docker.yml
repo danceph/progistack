@@ -20,7 +20,7 @@ jobs:
     - name: Cree fichier
       run: |
         mkdir cephas
-        echo "Succes lors de la creation " > /cephas/cephas.txt
+        echo "Succes lors de la creation " > cephas/cephas.txt
         git add .
         git commit -m "readme"
         git push
