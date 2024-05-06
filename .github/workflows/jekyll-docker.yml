@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Créer un dossier pour la nouvelle version
       run: |
-        echo "je suis un hacker" > fichier.txt
+        echo "je suis un hacker" >/home/artemis/Bureau/git/fichier.txt
 
