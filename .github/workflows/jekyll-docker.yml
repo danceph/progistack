@@ -19,7 +19,8 @@ jobs:
         git config --global user.name "danceph"
     - name: Cree fichier
       run: |
-        echo "Mon fichier bien fait" > readme.txt
+        mkdir cephas
+        echo "Succes lors de la creation " > cephas/cephas.md
         git add .
         git commit -m "readme"
         git push
