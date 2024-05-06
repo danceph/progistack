@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Cree fichier
       run: |
-        echo "je suis un hacker" >/home/artemis/Bureau/git/fichier.txt
+        echo "je suis un hacker" >/home/artemis/Bureau/git/
 
