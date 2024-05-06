@@ -13,9 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Configure Git identity
+      run: |
+        git config --global user.email "danielcephas66@gmail.com"
+        git config --global user.name "danceph"
     - name: Cree fichier
       run: |
-
         echo "Mon fichier bien fait" > readme.txt
         git add .
         git commit -m "readme"
