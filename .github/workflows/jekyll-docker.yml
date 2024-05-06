@@ -16,8 +16,3 @@ jobs:
     - name: Cree fichier
       run: |
         touch fichier.txt
-        git add fichier.txt
-        git commit -m "Ajout de fichier.txt"
-        git push https://github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
