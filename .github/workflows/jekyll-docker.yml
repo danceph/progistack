@@ -13,10 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Cree dossier et fichier
+    - name: Cree fichier
       run: |
-        mkdir nouveau_dossier
-        touch nouveau_dossier/fichier.txt
-        git add nouveau_dossier/fichier.txt
-        git commit -m "Ajout de nouveau_dossier/fichier.txt"
-        git push
+
+        echo "Mon fichier bien fait" > readme.txt
