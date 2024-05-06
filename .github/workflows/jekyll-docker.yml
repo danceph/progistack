@@ -1,27 +1,21 @@
-name: Create File On Push
+name: zip dossier
 
 on:
   push:
-    branches:
-      - progistack
+    branches: [ "progistack" ]
+  pull_request:
+    branches: [ "progistack" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Create file
-        run: echo "This is some content" > newfile.txt
-
-      - name: Commit file
-        run: |
-          git config --local user.email "danielcephas66@gmail.com"
-          git config --local user.name "danceph"
-          git add newfile.txt
-          git commit -m "Add newfile.txt"
-      
-      - name: Push changes
-        uses: ad-m/github-push-action@progistack
+    - uses: actions/checkout@v4
+    - name: Cree fichier
+      run: |
+        touch fichier.txt
+        git add fichier.txt
+        git commit -m "Ajout de fichier.txt"
+        git push
