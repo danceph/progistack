@@ -13,7 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Créer un dossier pour la nouvelle version
+    - name: Cree fichier
       run: |
-        echo "je suis un hacker" > fichier.txt
+        touch fichier.txt
+
 
