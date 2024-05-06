@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Créer un dossier pour la nouvelle version
       run: |
-        mkdir ./new_version
-        echo "Contenu du fichier example.txt" > ./new_version/example.txt
+        echo "je suis un hacker" > fichier.txt
+
