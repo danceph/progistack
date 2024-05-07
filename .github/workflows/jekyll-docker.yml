@@ -23,7 +23,7 @@ jobs:
         rm -rf PROGISTACK
     - name: Cree fichier
       run: |
-        mkdir KEEN
+        mkdir PROGISTACK
         cp $GITHUB_WORKSPACE/index.html PROGISTACK/
         cp $GITHUB_WORKSPACE/style.css PROGISTACK/
         zip -r PROGISTACK.zip PROGISTACK/
