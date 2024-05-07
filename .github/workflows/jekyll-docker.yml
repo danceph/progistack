@@ -23,8 +23,8 @@ jobs:
     - name: Cree fichier
       run: |
         mkdir PROGISTACK
-        cp $GITHUB_WORKSPACE/index.html PROGISTACK /
-        cp $GITHUB_WORKSPACE/style.css PROGISTACK/
+        cp -r $GITHUB_WORKSPACE/index.html PROGISTACK /
+        cp -r $GITHUB_WORKSPACE/style.css PROGISTACK/
         zip -r PROGISTACK.zip PROGISTACK/
         git add .
         git commit -m "Nouvelle mise a jour"
