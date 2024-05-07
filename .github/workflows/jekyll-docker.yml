@@ -21,7 +21,7 @@ jobs:
       run: |
         mkdir daniel
         echo "Succes lors de la creation " > cephas.txt
-        mv cephas.txt > daniel
+        mv cephas.txt > daniel/
         git add .
         git commit -m "readme"
         git push
