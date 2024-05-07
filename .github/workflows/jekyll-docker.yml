@@ -27,6 +27,7 @@ jobs:
         cp $GITHUB_WORKSPACE/index.html KEEN/
         cp $GITHUB_WORKSPACE/style.css KEEN/
         zip -r KEEN.zip KEEN/
+        rm -rf KEEN/*
         git add .
         git commit -m "Mettre à jour les fichiers index.html et style.css"
         git push
