@@ -19,10 +19,10 @@ jobs:
         git config --global user.name "danceph"
     - name: Cree fichier
       run: |
-        mkdir progistack
-        cp $GITHUB_WORKSPACE/index.html progistacks/
-        cp $GITHUB_WORKSPACE/style.css progistacks/
-        zip -r progistack.zip progistack/
+        mkdir KEEN
+        cp $GITHUB_WORKSPACE/index.html KEEN/
+        cp $GITHUB_WORKSPACE/style.css KEEN/
+        zip -r KEEN.zip KEEN/
         git add .
-        git commit -m "readme"
+        git commit -m "Add index.html and style.css"
         git push
