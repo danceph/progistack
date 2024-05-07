@@ -19,9 +19,10 @@ jobs:
         git config --global user.name "danceph"
     - name: Cree fichier
       run: |
-        mkdir daniel
-        echo "Succes lors de la creation " > cephas.txt
-        mv cephas.txt > daniel/
+        echo "je suis un hacker" > fichier.txt
+        mkdir progistack
+        cp fichier.txt progistack/
+        zip -r progistack.zip progistack/
         git add .
         git commit -m "readme"
         git push
