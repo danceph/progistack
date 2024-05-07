@@ -19,9 +19,9 @@ jobs:
         git config --global user.name "danceph"
     - name: Cree fichier
       run: |
-        echo "je suis un hacker" > fichier.txt
         mkdir progistack
-        cp fichier.txt progistack/
+        cp $GITHUB_WORKSPACE/index.html progistack/
+        cp $GITHUB_WORKSPACE/style.css progistack/
         zip -r progistack.zip progistack/
         git add .
         git commit -m "readme"
