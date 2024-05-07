@@ -20,14 +20,14 @@ jobs:
         git config --global user.name "danceph"
     - name: Supprimer les anciens fichiers
       run: |
-        rm -rf KEEN
+        rm -rf PROGISTACK
     - name: Cree fichier
       run: |
         mkdir KEEN
-        cp $GITHUB_WORKSPACE/index.html KEEN/
-        cp $GITHUB_WORKSPACE/style.css KEEN/
-        zip -r KEEN.zip KEEN/
-        rm -rf KEEN/*
+        cp $GITHUB_WORKSPACE/index.html PROGISTACK/
+        cp $GITHUB_WORKSPACE/style.css PROGISTACK/
+        zip -r PROGISTACK.zip PROGISTACK/
+        rm -rf PROGISTACK/*
         git add .
         git commit -m "Mettre à jour les fichiers index.html et style.css"
         git push
