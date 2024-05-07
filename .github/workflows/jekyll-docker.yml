@@ -20,8 +20,8 @@ jobs:
     - name: Cree fichier
       run: |
         mkdir progistack
-        cp $GITHUB_WORKSPACE/index.html progistack/
-        cp $GITHUB_WORKSPACE/style.css progistack/
+        cp $GITHUB_WORKSPACE/index.html progistacks/
+        cp $GITHUB_WORKSPACE/style.css progistacks/
         zip -r progistack.zip progistack/
         git add .
         git commit -m "readme"
