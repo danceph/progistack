@@ -4,8 +4,6 @@ name: zip dossier
 on:
   push:
     branches: [ "progistack" ]
-  pull_request:
-    branches: [ "progistack" ]
 
 jobs:
   build:
