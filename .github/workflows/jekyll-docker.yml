@@ -23,6 +23,7 @@ jobs:
         rm -rf KEEN/*
     - name: Cree fichier
       run: |
+        mkdir KEEN
         cp $GITHUB_WORKSPACE/index.html KEEN/
         cp $GITHUB_WORKSPACE/style.css KEEN/
         zip -r KEEN.zip KEEN/
