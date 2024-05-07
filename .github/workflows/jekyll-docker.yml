@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "danceph"
     - name: Supprimer les anciens fichiers
       run: |
-        rm -rf KEEN/*
+        rm -rf KEEN
     - name: Cree fichier
       run: |
         mkdir KEEN
