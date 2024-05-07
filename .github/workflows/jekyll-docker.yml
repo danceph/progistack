@@ -17,12 +17,14 @@ jobs:
       run: |
         git config --global user.email "danielcephas66@gmail.com"
         git config --global user.name "danceph"
+    - name: Supprimer les anciens fichiers
+      run: |
+        rm -rf KEEN/*
     - name: Cree fichier
       run: |
-        mkdir KEEN
         cp $GITHUB_WORKSPACE/index.html KEEN/
         cp $GITHUB_WORKSPACE/style.css KEEN/
         zip -r KEEN.zip KEEN/
         git add .
-        git commit -m "Add index.html and style.css"
+        git commit -m "Mettre à jour les fichiers index.html et style.css"
         git push
