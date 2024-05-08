@@ -4,7 +4,11 @@ name: zip dossier
 on:
   push:
     branches: [ "progistack" ]
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> refs/remotes/origin/progistack
 jobs:
   build:
 
