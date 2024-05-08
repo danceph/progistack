@@ -2,9 +2,7 @@ h1{
     font-size: 20px;
     color: blue;
 }
-
-ul{
-    width: 200px;
-    height: 50PX;
-    background-color: red;
+a{
+    color: red;
 }
+
